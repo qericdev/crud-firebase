@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-add',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent {
+
+  constructor(private activeModal: NgbActiveModal) {}
 
 }

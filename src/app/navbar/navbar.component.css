@@ -1,0 +1,43 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+div:hover {
+    color: #00214E;
+}
+
+div > svg {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+div > h1 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+li:hover {
+    transform: translateX(10px);
+}
+
+li > svg {
+    width: 1.5rem;
+    margin-right: 1rem;
+}

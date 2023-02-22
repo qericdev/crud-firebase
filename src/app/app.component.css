@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    background: linear-gradient(to bottom, #FCEC64, #F2EAC0);
+}
+
+.navbar {
+    width: 25%;
+    min-height: 100vh
+    
+}
+
+.dashboard {
+    width: 75%;
+    background-color: #FFFFFF;
+}

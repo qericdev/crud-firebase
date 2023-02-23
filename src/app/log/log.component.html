@@ -1,0 +1,10 @@
+<div class="overall">
+    <section class="dashboard">
+        <h1>Log</h1>
+        <p>Bienvenido! En esta vista, puedes ver en tiempo real los cambios a la base de datos.</p>
+        {{ items | async | json }}
+    </section>
+    <section class="app-user">
+        <app-user></app-user>
+    </section>
+</div>

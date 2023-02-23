@@ -15,3 +15,17 @@ th, td {
 th {
     background-color: #FFE17F;
 }
+
+.edit {
+    width: 20px;
+    color: blue;
+    margin-right: 0.5rem;
+    cursor:pointer;
+}
+
+.delete {
+    margin-left: 0.5rem;
+    width: 20px;
+    color: red;
+    cursor:pointer;
+}

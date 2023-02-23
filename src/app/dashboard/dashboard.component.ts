@@ -20,6 +20,10 @@ export class DashboardComponent {
 
     this.isModalOpen = true;
     const modalRef = this.modalService.open(AddComponent);
+    modalRef.componentInstance.onClose.subscribe(() => {
+      this.isModalOpen = false;
+      modalRef.close();
+    });
   }
 
 }

@@ -2,6 +2,8 @@ import { Component} from '@angular/core';
 import { PersonaService } from 'src/app/services/persona.service';
 import { Persona } from 'src/app/models/persona.model';
 import { map } from 'rxjs/operators';
+import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { UpdateComponent } from '../update/update.component';
 
 @Component({
   selector: 'app-list',
@@ -13,11 +15,26 @@ export class ListComponent {
   personas? : Persona[];
   currentPersona? : Persona;
   currentIndex = -1;
+  isModalOpen = false;
 
-  constructor(private personaService: PersonaService) { }
+  constructor(private personaService: PersonaService, private modalService : NgbModal) { }
 
   ngOnInit(): void {
     this.retrievePersonas();
+  }
+
+  openModal(persona : Persona) {
+    if (this.isModalOpen) {
+      return;
+    }
+
+    this.isModalOpen = true;
+    const modalRef = this.modalService.open(UpdateComponent);
+    modalRef.componentInstance.persona = persona;
+    modalRef.componentInstance.onClose.subscribe(() => {
+      this.isModalOpen = false;
+      modalRef.close();
+    });
   }
 
   retrievePersonas(): void {
@@ -43,4 +60,7 @@ export class ListComponent {
       console.error('Error deleting persona', error);
     }
   }
+
+
+
 }

@@ -12,6 +12,7 @@ import { ListComponent } from './list/list.component';
 import { UserComponent } from './user/user.component';
 import { AddComponent } from './add/add.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     ListComponent,
     UserComponent,
-    AddComponent
+    AddComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

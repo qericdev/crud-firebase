@@ -2,7 +2,23 @@
     <section class="dashboard">
         <h1>Log</h1>
         <p>Bienvenido! En esta vista, puedes ver en tiempo real los cambios a la base de datos.</p>
-        {{ items | async | json }}
+        <h2>Tabla de cambios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Documento</th>
+                    <th>Timestamp</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let persona of personas">
+                    <td>{{ persona.key }}</td>
+                    <td>{{persona.timestamp}}</td>
+                    <td>{{ persona.accion }}</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
     <section class="app-user">
         <app-user></app-user>

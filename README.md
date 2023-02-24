@@ -29,6 +29,10 @@ Dentro del componente log se tiene la siguiente estructura:
 - log
     - user
 
+Components que se comportan como modals:
+- add
+- update
+
 ## Elementos Principales
 
 Dentro de la aplicación se definieron 2 elementos principales:

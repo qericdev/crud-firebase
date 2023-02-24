@@ -3,7 +3,7 @@
 Este proyecto ha sido generado con [Angular CLI] (https://github.com/angular/angular-cli) version 15.1.6.
 El proyecto consiste en 2 vistas principales:
 
-- Dashboard: Muestra una tabla de personas 
+- Dashboard: Muestra una tabla de personas clasificadas por nombre, apellido, edad y sexo. Esta vista permite agregar nuevos registros, borrar existentes, modificar y leer sobre la base de datos.
 - Log: Muestra las modificaciones a la base de datos, indicando modificaciones, borrados o agregados. Muestra además el tiempo en el cual se llevó a cabo dicha operación y el documento involucrado. Tener en cuenta que la información que se muestra en esta vista, es temporal, cada vez que se actualiza la ventana del navegador, la información vuelve al inicio para mostrar solo las operaciones que ocurren mientras la vista está activa.
 
 Las tecnologías principales usadas para su elaboración son:

@@ -14,7 +14,7 @@
             <tbody>
                 <tr *ngFor="let persona of personas">
                     <td>{{ persona.key }}</td>
-                    <td>{{persona.timestamp}}</td>
+                    <td>{{ persona.timestamp | date:'dd/MM/yyyy hh:mm:ss a' }}</td>
                     <td>{{ persona.accion }}</td>
                 </tr>
             </tbody>

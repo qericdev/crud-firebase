@@ -9,6 +9,9 @@ El proyecto consiste en 2 vistas principales:
 Las tecnologías principales usadas para su elaboración son:
 - Angular 15.1.6.
 - Firebase RealTime Database.
+- Typescript.
+- CSS.
+- HTML.
 
 ## Estructura
 
@@ -24,7 +27,7 @@ Dentro del componente dashboard se tiene la siguiente estructura:
 
 Dentro del componente log se tiene la siguiente estructura:
 - log
-    -user
+    - user
 
 ## Elementos Principales
 

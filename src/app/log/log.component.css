@@ -1,10 +1,12 @@
 .overall {
     background-color: #FFFFFF;
-    margin: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
     padding: 0;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     display: flex;
+    width: 80%;
 }
 
 .dashboard {
@@ -14,6 +16,7 @@
     display: flex;
     flex-direction: column;
     text-align: justify;
+    overflow-x: auto;
 }
 
 .dashboard > button {
@@ -37,4 +40,34 @@
 
 .app-user {
     width: 30%;
+}
+
+table {
+    margin-top:2rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5em;
+    width: 20%;
+    text-align: center;
+}
+
+th {
+    background-color: #FFE17F;
+}
+
+@media (max-width: 1000px) {
+
+
+    .dashboard {
+        width: 100%;
+    }
+
+    .app-user {
+        display: none;
+    }
 }

@@ -2,10 +2,31 @@ main {
     display: flex;
     justify-content: center;
     background: linear-gradient(to left, #F5E694, #ECEADE);
+    min-height: 100vh;
 }
 
 .navbar {
     width: 25%;
-    min-height: 100vh
+    margin-left:2rem;
+    min-height: 100vh;
 }
 
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .navbar {
+        margin-left:0rem;
+        width: 100%;
+        min-height: 100px;
+    }
+}
+
+@media (min-width: 1300px) {
+  
+    .navbar {
+        max-width: 200px;
+    }
+}
